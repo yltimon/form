@@ -8,24 +8,47 @@
 <body>
     <form action="">
         <fieldset>
-            <legend>Meal Plan</legend>
-            <label for="FN">First name:</label>
-            <input type="text" name="firstname" id="FN"><br>
-            <br>
-            <label for="LN">Last name: </label>
-            <input type="text" name="lastname" id="LN"><br>
-            <br>
-            <label for="AG">Age:</label>
-            <input type="number" name="Age" id="AG"><br>
-            <br>
-            <label for="POTM">POTM</label>
-            <input type="month" name="Month" id="Month">
-            <label for="DOB">DOB</label>
-            <input type="date" name="DOB" id="DOB"><br>
-            <br>
-            <label for="CB">Club</label>
-            <input type="text" name="Club" id="CB"><br>
-            <br>
+            <legend style="text-align: center; font-size: 20px;">Meal Plan</legend>
+            <fieldset>
+                <legend style="text-align: right;">Personal Details</legend>
+                <label for="FN">First name:</label><br>
+                <input type="text" name="firstname" id="FN"><br>
+                <br>
+                <label for="LN">Last name: </label><br>
+                <input type="text" name="lastname" id="LN"><br>
+                <br>
+                <label for="AG">Age:</label><br>
+                <input type="number" name="Age" id="AG"><br>
+                <br>
+                <label for="admission">Adm No:</label><br>
+                <input type="text" name="admNo" id="admission"><br>
+                <br>
+                <label for="schoolEmail">Email:</label><br>
+                <input type="email" name="Email" id="schoolEmail"><br>
+                <br>
+                <label for="schoolFaculty">Choose your school:</label><br>
+                <input list="school" name="school" id="schoolFaculty">
+
+                <datalist id="school">
+                <option value="Computing Science">
+                <option value="Communication and Multimedia Journalism">
+                <option value="Business">
+                <option value="International Relations & Diplomacy">
+                <option value="Law School">
+                </datalist>
+
+            </fieldset><br>
+                <fieldset>
+                    <legend style="text-align: right;" >Select Meal Plan</legend>
+                    <label for="POTM">POTM</label>
+                    <input type="month" name="Month" id="Month">
+                    <label for="DOB">DOB</label>
+                    <input type="date" name="DOB" id="DOB"><br>
+                    <br>
+                    <label for="CB">Club</label>
+                    <input type="text" name="Club" id="CB"><br>
+                    <br>
+                </fieldset>
         </fieldset>
     </form>
 </body>
